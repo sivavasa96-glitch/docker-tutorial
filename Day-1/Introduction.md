@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Virtualization:
 ==============
 
@@ -32,10 +33,14 @@ Containers enable developers to build, test, and deploy applications more effici
 What is a container ?:
 ========================
 
+=======
+What is a container ?
+>>>>>>> 6969f2e00740f57264448f5971798daf86a0c0c3
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 
 Ok, let me make it easy !!!
 
+<<<<<<< HEAD
 A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
 
 ![image](image-2.png)
@@ -61,3 +66,6 @@ Let's try to understand this with an example:
 Below is the screenshot of official ubuntu base image which you can use for your container. It's just ~ 22 MB, isn't it very small ? on a contrary if you look at official ubuntu VM image it will be close to ~ 2.3 GB. So the container base image is almost 100 times less than VM image.
 
 ![image](image-3.png)
+=======
+A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
+>>>>>>> 6969f2e00740f57264448f5971798daf86a0c0c3
