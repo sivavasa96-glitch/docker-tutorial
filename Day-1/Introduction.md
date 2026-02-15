@@ -15,7 +15,7 @@ Virtualization:
 Diagram of virtualization:
 ==============================
 
-    ![image](image.png)
+![image](image-4.png)
 
 what is containers:
 ================================
