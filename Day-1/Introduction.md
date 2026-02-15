@@ -27,13 +27,12 @@ Containers are lightweight compared to traditional virtual machines (VMs) becaus
 Containers are designed to be scalable, allowing you to quickly scale up or down based on demand.
 Containers enable developers to build, test, and deploy applications more efficiently, leading to faster release cycles and improved collaboration between development and operations teams.
 
-![image2](image-1.png)
+![image](image-1.png)
 
 
 What is a container ?:
 ========================
 
-=======
 What is a container ?
 =====================
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
