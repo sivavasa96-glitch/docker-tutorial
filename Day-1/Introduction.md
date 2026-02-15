@@ -12,10 +12,11 @@ Virtualization:
 
 
 
-    Diagram of virtualization:
-    ==============================
+Diagram of virtualization:
+==============================
 
     ![image](image.png)
+
 what is containers:
 ================================
 
