@@ -17,8 +17,9 @@ Docker Image Commands:
 ======================
 
 1) Check Docker images
+```hcl
 docker images
-
+```
 2) Pull image from DockerHub
 docker pull nginx
 
