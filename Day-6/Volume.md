@@ -67,3 +67,27 @@ they can be managed and backed up separately from the host file system, and can 
 In a nutshell, Bind Directory on a host as a Mount are appropriate for simple use cases where you need to mount a directory from the host file system into
 a container, while volumes are better suited for more complex use cases where you need more control over the data being persisted
 in the container.
+
+Docker Volume Commands (Most Important):
+========================================
+
+1) Create a volume
+```
+docker volume create myvol
+```
+2) List volumes
+```
+docker volume ls
+```
+3) Inspect volume
+```
+docker volume inspect myvol
+```
+4) Remove volume
+```
+docker volume rm myvol
+```
+5) Remove unused volumes
+```
+docker volume prune
+```
