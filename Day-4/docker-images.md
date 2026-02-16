@@ -46,62 +46,97 @@ docker tag myapp:1.0 myrepo/myapp:1.0
 ```
 8) Push image to DockerHub
 ```hcl
+docker login
+
 docker push myrepo/myapp:1.0
+```
+Run command options
+=====================
+
+```hcl
+ -rm this used to remove a container once we exit from it
+ -it this is used to open the shell or interactive termianl in tha container where we can file linux commands
+ --name this is used to give a customised name to our container
+ -p This is used for port mapping.The port no on left side of :     is called external port and port no on right of : is called      internal port no(eg -p 3308:3306)
+ -v This is used for attaching volumes
+  -P This is used to publish the port number of a docker      container
+  -e this used to pass environment variables
+  -a used to attach stndin and stdout
 ```
 
 ✅ Docker Container Commands:
 ==============================
 
-1) Run a container
+1) To see the list of all running containers
+```hcl
+docker container ls
+```
+2) Run a container
 ```hcl
 docker run nginx
 ```
-2) Run container in background (detached mode)
+3) Run container in background (detached mode)
 ```hcl
 docker run -d nginx
 ```
-3) Run container with name
+4) Run container with name
 ```hcl
 docker run -d --name web nginx
 ```
-4) Check running containers
+5) Check running containers
 ```hcl
 docker ps
 ```
 
-5) Check all containers (running + stopped)
+6) Check all containers (running + stopped)
 ```hcl
 docker ps -a
 ```
-6) Stop a container
+7) Stop a container
 ```hcl
 docker stop web
 ```
-7) Start a stopped container
+8) Start a stopped container
 ```hcl
 docker start web
 ```
-8) Restart a container
+9) Restart a container
 ```hcl
 docker restart web
 ```
-9) Remove a container
+10) Remove a container
 ```hcl
 docker rm web
 ```
-10) Remove container forcefully
+11) Remove container forcefully
 ```hcl
 docker rm -f web
 ```
-11) View container logs
+12) View container logs
 ```hcl
 docker logs web
 ```
-12) Login inside container
+13) Login inside container
 ```hcl
 docker exec -it web bash
 ```
-13) Check container details
+14) Check container details
 ```hcl
 docker inspect web
+```
+15) To stop all the running containers
+```hcl
+docker stop $(docker ps -aq)
+```
+16) To remove all stopped containers
+```hcl
+docker rm  $(docker ps -aq)
+```
+17) To remove all running containers
+```
+docker rm -f $(docker ps -aq)
+```
+18) To restart a container after 20 seconds
+```hcl
+docker restart -t 20 containername/containerid
 ```
