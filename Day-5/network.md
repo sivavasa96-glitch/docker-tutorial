@@ -88,3 +88,43 @@ This mode enables communication between containers across multiple Docker host m
 ### Macvlan Networking
 
 This mode allows a container to appear on the network as a physical host rather than as a container.
+
+### Docker Network Commands 
+
+1) To find the lsit of all docker networks
+```
+docker network ls
+```
+2) To find complete info about a network
+```
+docker network inspect networkname/networkid
+```
+3) To find complete info about a container
+```
+docker network inspect containername/containerid
+```
+4) To create a new network
+```
+docker network create networkname
+```
+5) To remove a network
+```
+docker network rm networkname/networkid
+```
+6) To connect to a network
+```
+docker network connect networkid/networkname containerid/containername
+```
+7) To disconnect to a network
+```
+docker network disconnect networkid/networkname  containerid/containername
+```
+8) To display logs of a container
+```
+docker logs containername/contaierid
+```
+
+9) To display last 100logs of a container
+```
+docker logs -tail 100 containername/contaierid 
+```
