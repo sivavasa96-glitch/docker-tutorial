@@ -1,6 +1,6 @@
 Important commands used:
 ========================
-___hcl
+___
 kubectl version – Shows kubectl client and Kubernetes server version.
 kubectl get pods – Shows all running pods in the cluster.
 kubectl get pods -n kube-system – Lists system pods in kube-system namespace.
