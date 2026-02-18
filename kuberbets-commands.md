@@ -2,9 +2,8 @@ Important commands used:
 ========================
 ___
 kubectl version: 
----
-    Shows kubectl client and Kubernetes server version.
----
+Shows kubectl client and Kubernetes server version.
+
 
 kubectl get pods – Shows all running pods in the cluster.
 
