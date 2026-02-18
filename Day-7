@@ -1,14 +1,20 @@
+Docker file
+============
 A Dockerfile is a text file that contains a set of instructions used by Docker to automatically build a Docker image.
-Why Dockerfile is used
+
+Why Dockerfile is user
+===≈==================
+
 Dockerfile is used to:
 Automate the creation of Docker images
 Ensure consistent application environment across development, testing, and production
 Make deployment portable and repeatable
 Reduce manual installation and configuration steps
-Support CI/CD pipelines by building standardized images
+Support CI/CD pipelines by building standardized image
+
 Example Dockerfile (Node.js)
-Dockerfile
-Copy code
+=======≈=======≈===
+
 FROM node:18
 WORKDIR /app
 COPY package*.json ./
@@ -16,12 +22,18 @@ RUN npm install
 COPY . .
 EXPOSE 3000
 CMD ["node", "server.js"]
-Brief Explanation
+
+Brief Explanations
+==================
+
 FROM: Defines the base image
 WORKDIR: Sets the working directory inside the container
 COPY: Copies application files into the image
 RUN: Executes commands during image build (example: install dependencies)
 EXPOSE: Specifies the port used by the application
-CMD: Defines the command to run when the container starts
-Conclusion
+CMD: Defines the command to run when the container start
+
+Conclusions
+=============
+
 A Dockerfile provides a standardized, automated, and version-controlled way to package applications and their dependencies into Docker images for reliable execution in any environment.
