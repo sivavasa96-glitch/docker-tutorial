@@ -54,4 +54,5 @@ minikube start – Starts local Kubernetes cluster.
 minikube ip – Shows Minikube cluster IP address.
 
 minikube service nginx-service --url – Shows URL to access nginx service in browser.
+
 ---
