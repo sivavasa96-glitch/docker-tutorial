@@ -4,7 +4,7 @@ Docker file
     A Dockerfile is a text file that contains a set of instructions used by Docker to automatically build a Docker image.
 
 Why Dockerfile is user
-===≈==================
+=====================
 
  Dockerfile is used to:
    =======================
@@ -16,7 +16,7 @@ Why Dockerfile is user
     Support CI/CD pipelines by building standardized image
 
 Example Dockerfile (Node.js)
-=======≈=======≈===
+=====================
 
 FROM node:18
 WORKDIR /app
