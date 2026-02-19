@@ -10,6 +10,7 @@ Example of Docker Compose File:
 
 docker-compose.yml
 
+---hcl
 version: "3.8"
 
 services:
@@ -27,19 +28,19 @@ services:
       MYSQL_DATABASE: testdb
     ports:
       - "3306:3306"
-
+---
 
 Commands:
 ==========
 
 Start containers:
 
----
+---hcl
 docker compose up -d
 ---
 
 Stop and remove containers:
 
----
+---hcl
 docker compose down
 ---
